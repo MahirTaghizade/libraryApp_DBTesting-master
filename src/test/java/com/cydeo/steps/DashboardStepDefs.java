@@ -39,7 +39,7 @@ public class DashboardStepDefs
     public void the_informations_should_be_same_with_database() {
 
         // make a connection
-        DB_Util.createConnection();
+        //DB_Util.createConnection();- we added before after custom hooks
         //run the query
         DB_Util.runQuery("select count(*) from users");
         // store data
@@ -63,7 +63,7 @@ public class DashboardStepDefs
 
 
         // close the connection
-        DB_Util.destroy();
+       // DB_Util.destroy();--we added before after custom hooks
     }
 
 
